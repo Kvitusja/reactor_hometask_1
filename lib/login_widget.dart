@@ -32,14 +32,15 @@ class _LoginWidgetState extends State<LoginWidget> {
   }
 
   bool userIsAdmin(String login, String password) {
-    if(login == 'admin' && password == '123456') {
+    if (login == 'admin' && password == '123456') {
       return true;
     }
-      return false;
+    return false;
   }
 
   Future<void> setLoginData() async {
-    final SharedPreferences myPreferences = await SharedPreferences.getInstance();
+    final SharedPreferences myPreferences =
+        await SharedPreferences.getInstance();
     myPreferences.setString('userName', userNameController.text);
     myPreferences.setString('password', passwordController.text);
   }
@@ -68,16 +69,16 @@ class _LoginWidgetState extends State<LoginWidget> {
               const SizedBox(
                 height: 10,
               ),
-              Text(
+               Text(
                 'Привіт, козаче',
                 style:
-                    GoogleFonts.bebasNeue(fontSize: 40, color: Colors.black87),
+                GoogleFonts.oswald(fontSize: 42, color: Colors.black87, fontWeight: FontWeight.w700),
               ),
               const SizedBox(
                 height: 10,
               ),
               const Text(
-                'Мусиш залогінитися!',
+                'Мусиш залогiнитися!',
                 style: TextStyle(fontSize: 20, color: Colors.black87),
               ),
               const SizedBox(
@@ -89,7 +90,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                   textInputAction: TextInputAction.next,
                   controller: userNameController,
                   decoration: InputDecoration(
-                    hintText: 'Ім\'я',
+                    hintText: 'Iм\'я',
                     suffixIcon: const Icon(Icons.person),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
@@ -149,22 +150,28 @@ class _LoginWidgetState extends State<LoginWidget> {
                       ),
                     ),
                     onPressed: () {
-                      if(isRemembered == true && userIsAdmin(userNameController.text, passwordController.text,)){
+                      if (isRemembered == true &&
+                          userIsAdmin(
+                            userNameController.text,
+                            passwordController.text,
+                          )) {
                         setLoginData();
                       }
                       myAuthentification();
                     },
                     child: Text(
                       'Далі',
-                      style: GoogleFonts.bebasNeue(
-                          fontSize: 20, color: Colors.black87),),
+                      style: GoogleFonts.oswald(
+                        fontWeight: FontWeight.w500,
+                          fontSize: 20, color: Colors.black87),
                     ),
+                  ),
                 ],
               ),
               Text(
                 errorText!,
-                style: GoogleFonts.bebasNeue(
-                  fontSize: 25,
+                style: GoogleFonts.oswald(
+                  fontSize: 27,
                   color: const Color.fromRGBO(158, 9, 9, 0.8),
                 ),
               ),

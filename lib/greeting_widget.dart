@@ -108,7 +108,7 @@ class _GreetingWidgetState extends State<GreetingWidget> {
                                     onPressed: () =>
                                         Navigator.of(context).pop(),
                                     child: Text(
-                                      'Ні',
+                                      'Нi',
                                       style: GoogleFonts.bebasNeue(
                                           fontSize: 22, color: Colors.black87),
                                     ),
@@ -126,8 +126,8 @@ class _GreetingWidgetState extends State<GreetingWidget> {
       body: Center(
         child: Container(
           child: Text(
-            'Glad to see you back',
-            style: GoogleFonts.bebasNeue(fontSize: 36, color: Colors.black87),
+            'Раді знову тебе бачити!',
+            style: GoogleFonts.oswald(fontSize: 38, color: Colors.black87),
           ),
         ),
       ),
