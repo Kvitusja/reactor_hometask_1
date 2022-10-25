@@ -26,7 +26,7 @@ class _LoginWidgetState extends State<LoginWidget> {
         MaterialPageRoute(builder: (context) => const GreetingWidget()),
       );
     } else {
-      errorText = 'Wrong email or password';
+      errorText = 'Невірне ім\'я чи пароль';
     }
     setState(() {});
   }
@@ -52,7 +52,7 @@ class _LoginWidgetState extends State<LoginWidget> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: const Text(
-          'First hometask',
+          'Моя перша домашка',
           style: TextStyle(color: Colors.black87),
         ),
       ),
@@ -69,7 +69,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                 height: 10,
               ),
               Text(
-                'Hello User!',
+                'Привіт, козаче',
                 style:
                     GoogleFonts.bebasNeue(fontSize: 40, color: Colors.black87),
               ),
@@ -77,7 +77,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                 height: 10,
               ),
               const Text(
-                'You need to log in!',
+                'Мусиш залогінитися!',
                 style: TextStyle(fontSize: 20, color: Colors.black87),
               ),
               const SizedBox(
@@ -89,7 +89,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                   textInputAction: TextInputAction.next,
                   controller: userNameController,
                   decoration: InputDecoration(
-                    hintText: 'User name',
+                    hintText: 'Ім\'я',
                     suffixIcon: const Icon(Icons.person),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
@@ -103,7 +103,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                   controller: passwordController,
                   obscureText: true,
                   decoration: InputDecoration(
-                    hintText: 'Password',
+                    hintText: 'Пароль',
                     suffixIcon: const Icon(Icons.lock),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
@@ -127,7 +127,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                   ),
                   //const SizedBox(width: 10,),
                   const Text(
-                    'Remember Me',
+                    'Запам\'ятати',
                     style: TextStyle(fontSize: 16, color: Colors.black87),
                   ),
                   const SizedBox(
@@ -155,7 +155,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                       myAuthentification();
                     },
                     child: Text(
-                      'Next',
+                      'Далі',
                       style: GoogleFonts.bebasNeue(
                           fontSize: 20, color: Colors.black87),),
                     ),

@@ -26,7 +26,7 @@ class _GreetingWidgetState extends State<GreetingWidget> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: const Text(
-          'First hometask',
+          'Моя перша домашка',
           style: TextStyle(color: Colors.black87),
         ),
         actions: [
@@ -45,7 +45,7 @@ class _GreetingWidgetState extends State<GreetingWidget> {
                             children: [
                               Center(
                                 child: Text(
-                                  'Do you want to logout?',
+                                  'Хочеш вийти з акаунту?',
                                   style: GoogleFonts.bebasNeue(
                                       fontSize: 24, color: Colors.black87),
                                 ),
@@ -82,7 +82,7 @@ class _GreetingWidgetState extends State<GreetingWidget> {
                                       );
                                     },
                                     child: Text(
-                                      'Yes',
+                                      'Так',
                                       style: GoogleFonts.bebasNeue(
                                           fontSize: 22, color: Colors.black87),
                                     ),
@@ -108,7 +108,7 @@ class _GreetingWidgetState extends State<GreetingWidget> {
                                     onPressed: () =>
                                         Navigator.of(context).pop(),
                                     child: Text(
-                                      'No',
+                                      'Ні',
                                       style: GoogleFonts.bebasNeue(
                                           fontSize: 22, color: Colors.black87),
                                     ),
