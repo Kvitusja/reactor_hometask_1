@@ -116,6 +116,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                   Padding(
                     padding: const EdgeInsets.fromLTRB(5.0, 10, 0, 10),
                     child: Checkbox(
+                      activeColor: Colors.grey,
                       value: isRemembered,
                       onChanged: (remembered) {
                         setState(() {
@@ -153,11 +154,11 @@ class _LoginWidgetState extends State<LoginWidget> {
                       }
                       myAuthentification();
                     },
-                    child: const Text(
+                    child: Text(
                       'Next',
-                      style: TextStyle(fontSize: 16, color: Colors.black87),
+                      style: GoogleFonts.bebasNeue(
+                          fontSize: 20, color: Colors.black87),),
                     ),
-                  ),
                 ],
               ),
               Text(
